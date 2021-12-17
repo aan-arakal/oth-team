@@ -1,6 +1,5 @@
 import Image from "next/image"
 function addEplisis(text){
-    console.log('ddd')
    return text.length<=13 ? text :text.substr(0,10)+"..."
 }
 export default function OthFETeam({results}){
@@ -22,10 +21,10 @@ className="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/images/per
   </div>
 
 <p className="text-gray-500 font-thin text-sm">
-eric.feldman@ey.com
+xxxx.xxxxx@xx.com
     </p>
     <p className="text-gray-500 font-thin text-sm">
-    +12127737790
+    (555) 555-1234
     </p>
 </div>
 </div>
