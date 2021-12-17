@@ -3,73 +3,46 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import OthFETeam from './oth-fe-team'
 const teamMembers=[{
+  id:1,
   name:'Chad Clayton',
-  title:'Product manage'
+  title:'Product manager'
 },
 {
+  id:2,
   name:'Eric fieldman',
   title:'Developer'
 },
 {
-  name:'Madhu Payyavula ',
+  id:3,
+  name:'Madhu Payyavula',
   title:'Developer'
 },
 {
+  id:4,
+  name:'Monisha Rajendran',
+  title:'Developer'
+},
+{
+  id:5,
   name:'Eric Feldman',
   title:'Developer'
 },
 {
+  id:6,
   name:'Eric Feldman',
   title:'Developer'
 },
 {
-  name:'Eric Feldman',
+  id:7,
+  name:'Jay Bohra',
   title:'Developer'
 },
 {
-  name:'Eric Feldman',
+  id:8  ,
+  name:'Ankit Sengupta',
   title:'Developer'
 },
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
-{
-  name:'Eric Feldman',
-  title:'Developer'
-},
+
 ]
 export default function Home() {
   return (
@@ -80,20 +53,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div class="p-24">
-  <div class="text-center mb-16">
-    <p class="mt-4 text-sm leading-7 text-gray-500 font-regular">
+      <div className="p-24">
+  <div className="text-center mb-16">
+    <p className="mt-4 text-sm leading-7 text-gray-500 font-regular">
         THE OTH TEAM
       </p>
-      <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
-        Meet Our <span class="text-indigo-600">Team</span>
+      <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+        Meet Our <span className="text-indigo-600">Team</span>
       </h3>
   </div>
   
   
-  <div class="grid gap-4 grid-cols-3 grid-rows-3">
+  <div className="grid gap-4 grid-cols-3 grid-rows-3">
 
-  {teamMembers.map(member=><OthFETeam  results={member}></OthFETeam>)}  
+  {teamMembers.map(member=><OthFETeam key={member? member.id:""} results={member}></OthFETeam>)}  
     </div>  
     
   </div>
